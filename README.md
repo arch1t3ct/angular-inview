@@ -49,6 +49,9 @@ indicating which part of the DOM element is visible.
 An additional attribute `in-view-offset` can be speficied to add a virtual
 offset to the element that will anticipate or delay the in view event.
 
+A hack `in-view-delay` has been added. It allows to change the delay of in-view timer. Very useful when item skipping
+occurs (most of the time - via using scrollbar). Beware of large values - the timer is BLOCKING!
+
 ## Testing
 
 To run tests, [install Karma](http://karma-runner.github.io/) and run: `karma start`.
