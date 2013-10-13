@@ -50,7 +50,9 @@ An additional attribute `in-view-offset` can be speficied to add a virtual
 offset to the element that will anticipate or delay the in view event.
 
 A hack `in-view-delay` has been added. It allows to change the delay of in-view timer. Very useful when item skipping
-occurs (most of the time - via using scrollbar). Beware of large values - the timer is BLOCKING!
+occurs (most of the time - via using scrollbar). Beware of large values - the timer is BLOCKING! Beware of super low
+values too. In fact - don't even think of using this hack. It's no good. A complete rewrite of timeout function is
+needed.
 
 ## Testing
 
